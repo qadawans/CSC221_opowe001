@@ -1,0 +1,58 @@
+>>> test_1 = 37
+>>> test_2 = [12, 14, 99]
+>>> print(f'{test_1=}')
+test_1=37
+>>> print('test_2 is', test_2)
+test_2 is [12, 14, 99]
+>>> def doubler(x)
+  File "<stdin>", line 1
+    def doubler(x)
+                  ^
+SyntaxError: expected ':'
+>>> def doubler(x):
+... y = x * 2
+  File "<stdin>", line 2
+    y = x * 2
+    ^
+IndentationError: expected an indented block after function definition on line 1
+>>> y = x * 2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'x' is not defined
+>>> y
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'y' is not defined
+>>> def doubler(x):
+... y = x * 2
+  File "<stdin>", line 2
+    y = x * 2
+    ^
+IndentationError: expected an indented block after function definition on line 1
+>>> def doubler(x):
+... y = x * 2
+  File "<stdin>", line 2
+    y = x * 2
+    ^
+IndentationError: expected an indented block after function definition on line 1
+>>> def doubler(x):
+... y = x * 2
+  File "<stdin>", line 2
+    y = x * 2
+    ^
+IndentationError: expected an indented block after function definition on line 1
+>>> def doubler(x):
+...     y = x * 2
+...     return y
+...
+>>> def doubler(x):
+... def doubler(x):
+  File "<stdin>", line 2
+    def doubler(x):
+    ^
+IndentationError: expected an indented block after function definition on line 1
+>>>     y = x * 2
+  File "<stdin>", line 1
+    y = x * 2
+IndentationError: unexpected indent
+>>>
